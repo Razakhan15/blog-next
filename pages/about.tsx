@@ -6,8 +6,8 @@ function about() {
       <div className="p-5">
         <h1 className="p-5 text-xl font-bold">Members:</h1>
         <div className="flex flex-wrap m-auto lg:w-1/2 justify-evenly items-center">
-          {posts.map((post) => (
-            <div className="p-5 font-semibold flex justify-center items-center gap-5">
+          {posts.map((post, i) => (
+            <div key={i} className="p-5 font-semibold flex justify-center items-center gap-5">
               <img
                 className="h-10 border-2 border-violet-600  w-10 rounded-full"
                 src={post.image}
